@@ -3,9 +3,9 @@ kind: PersistentVolumeClaim
 metadata:
   name: mysql  
 spec:
-  storageClassName: csi-hostpath-sc
+  storageClassName: efs.csi.aws.com
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 5Gi
+      storage: gp2
