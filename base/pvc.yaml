@@ -3,9 +3,9 @@ kind: PersistentVolumeClaim
 metadata:
   name: mysql  
 spec:
-  storageClassName: gp2
+  storageClassName: my-azurefile
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 5Gi
+      storage: 100Gi
