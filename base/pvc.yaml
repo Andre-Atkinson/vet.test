@@ -1,9 +1,9 @@
-apiVersion: v1
+tapiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: mysql  
 spec:
-  storageClassName: lvms-vg1
+  storageClassName: lvms-vg1-Default
   accessModes:
     - ReadWriteOnce
   resources:
